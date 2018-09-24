@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>basic</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="pro.css">  
+    </head>
+    <body>
+ 
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="togglesidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a class="active" href="home">HOME</a></li>
+                <li><a href="VIEW">VIEW</a></li>
+                <li><a href="CAMPUS-DRIVE">CAMPUS-DRIVE</a></li>
+                <li><a href="LOGOUT">LOGOUT</a></li>
+            </ul>  
+        </div>
+               <script>
+           function togglesidebar()
+{
+    document.getElementById("sidebar").classList.toggle('active');
+}
+        </script>
+    </body>
+</html>

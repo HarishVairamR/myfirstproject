@@ -1,0 +1,317 @@
+* {
+    padding:0;
+    margin: 0
+}
+.login {
+    width:32vw;
+    left: 0;
+    height: 100vh;
+    background-color: #344A85;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-family: Arial, sans-serif
+}
+.form {
+    position: relative;
+    margin-left: 5vw;
+    top:50%;
+    transform: translateY(-50%)
+}
+h1 {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+img {
+    width: 20vw;
+    margin-bottom:40px;
+}
+input {
+    margin-top: 5px;
+    margin-bottom: 35px;
+    width: 20vw;
+    height: 35px;
+    border: 0px solid #000000;
+    border-radius: 3px;
+}
+button {
+    color: white;
+    background-color: #009EE3;
+    border: 0px solid #009EE3;
+    font-size: 20px;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 35px;
+    width: 20vw;
+    height: 35px;
+}
+svg {
+    height: 100vh;
+    left: 32vw;
+    position: absolute
+}
+
+/*************CHARACTER*************/
+#visage {
+    transform-origin: 50% 100%;   
+    transform: rotate(0deg);
+    animation: moveHead 5s 0s cubic-bezier(0.230, 1.000, 0.320, 1.000);  
+}
+/********************************
+ ************* EYES *************
+ ********************************/
+.eyes {
+    animation: removeEyes 18s 3s linear infinite;  
+}
+.eyesMove, .sourcils, .nez {
+    animation: moveEyes 7s 0s linear infinite;  
+}
+/********************************
+ ************* HAND *************
+ ********************************/
+#hand {
+    animation: moveHand 10s cubic-bezier(0.860, 0.000, 0.070, 1.000) infinite;  
+}
+#handClick {
+    transform: translateY(-2px);
+    animation: handClick 10s cubic-bezier(0.230, 1.000, 0.320, 1.000) infinite;  
+}
+/********************************
+ ************* FOOT *************
+ ********************************/
+#piedDroit {
+    animation: footMove 10s 0s ease-in-out infinite;  
+}
+#shadowFoot {
+    opacity: 0;
+    animation: shadowFoot 10s 0s ease-in-out infinite;   
+}
+/********************************
+ ************* HEAR *************
+ ********************************/
+.hear .outHearRight {
+    animation: moveHearOutRight 7s 0s linear infinite;  
+}
+.hear .outHearLeft {
+    animation: moveHearOutLeft 7s 0s linear infinite;  
+    transform: translateX(1px)
+}
+.hear .inHearRight {
+    animation: moveHearInRight 7s 0s linear infinite;  
+}
+.hear .inHearLeft {
+    animation: moveHearInLeft 7s 0s linear infinite;  
+        transform: translateX(1px)
+}
+/********************************
+ ************* HAIR *************
+ ********************************/
+.backHair {
+    animation: moveBackHair 7s 0s linear infinite;  
+}
+.frontHair {
+    animation: moveFrontHair 7s 0s linear infinite;  
+}
+.pateLeft {
+    animation: movePateLeft 7s 0s linear infinite;  
+}
+.pateRight {
+    animation: movePateRight 7s 0s linear infinite;  
+}
+#shadowHead {
+    animation: moveshadowHead 7s 0s linear infinite;  
+}
+/********************************
+ ************* REST *************
+ ********************************/
+#logoComputer-2 {
+    animation: lightComputer 2s linear infinite alternate;  
+}
+.vapeur {
+    animation: vapeur 2.5s ease-in infinite;  
+}
+.vapeur:nth-child(5) {
+    animation-delay:1s;  
+}
+.vapeur:nth-child(6) {
+    animation-delay: 2s;  
+}
+#plane {
+    animation: planeMove 8s cubic-bezier(0.480, 0.310, 0.615, 0.455) ;  
+}
+#fenetre {
+}
+/************* KEYFRAMES *************/
+
+/********************************
+ ************* FOOT *************
+ ********************************/  
+@keyframes footMove {
+  40% {     transform: rotate(0deg);
+    transform-origin: bottom right; }    
+  41% {     transform: rotate(10deg);
+    transform-origin: bottom right; }
+  42% {     transform: rotate(0deg);
+    transform-origin: bottom right; }
+  43% {     transform: rotate(10deg);
+    transform-origin: bottom right; }
+  44% {     transform: rotate(0deg);
+    transform-origin: bottom right; }
+  45% {     transform: rotate(10deg);
+    transform-origin: bottom right; }
+  46% {     transform: rotate(0deg);
+    transform-origin: bottom right; }
+  47% {     transform: rotate(10deg);
+    transform-origin: bottom right; }
+  48% {     transform: rotate(0deg);
+    transform-origin: bottom right; }
+  49% {     transform: rotate(10deg);
+    transform-origin: bottom right; }
+  50% {     transform: rotate(0deg);
+    transform-origin: bottom right; }
+}
+@keyframes shadowFoot {
+  40% { opacity: 0; transform: scale(0.6);transform-origin: center;}    
+  41% { opacity: 0.3;transform: scale(1);transform-origin: center;}
+  42% { opacity: 0; transform: scale(0.6);transform-origin: center;}
+  43% { opacity: 0.3;transform: scale(1);transform-origin: center;}
+  44% { opacity: 0; transform: scale(0.6);transform-origin: center;}
+  45% { opacity: 0.3;transform: scale(1);transform-origin: center;}
+  46% { opacity: 0; transform: scale(0.6);transform-origin: center;}
+  47% { opacity: 0.3;transform: scale(1);transform-origin: center;}
+  48% { opacity: 0; transform: scale(0.6);transform-origin: center;}
+  49% { opacity: 0.3;transform: scale(1);transform-origin: center;}
+  50% { opacity: 0; transform: scale(0.6);transform-origin: center;}
+}
+/********************************
+ ************* EYES *************
+ ********************************/
+@keyframes moveEyes {
+  50% {transform: translateX(0px) }
+  55% {transform: translate(-4px,4px)}
+  60% {transform: translate(-4px,4px)}
+  65% {transform: translate(4px,4px) }
+  70% {transform: translate(4px,4px) }
+  75% {transform: translateX(0px) }
+}
+@keyframes removeEyes {
+  17% { r:3.43 }
+  17.3% {r:0}
+  17.6% { r:3.43 }
+  70% { r:3.43 }
+  70.3% {r:0}
+  70.6% { r:3.43 }
+  71.3% { r:3.43 }
+  71.6% {r:0}
+  71.9% { r:3.43 }
+}
+/********************************
+ ************* HAIR *************
+ ********************************/
+@keyframes movePateLeft {
+  50% {width: 3px }
+  55% {width: 0px  }
+  60% {width: 0px  }
+  65% {width: 5px  }
+  70% {width: 5px  }
+  75% {width: 3px  }
+}
+@keyframes movePateRight {
+  50% {width: 3px;transform:translateX(0px) }
+  55% {width: 5px;transform:translateX(-2px) }
+  60% {width: 5px;transform:translateX(-2px)  }
+  65% {width: 0px;transform:translateX(2px)  }
+  70% {width: 0px;transform:translateX(2px)  }
+  75% {width: 3px;transform:translateX(0px)  }
+}
+@keyframes moveshadowHead {
+  50% {width: 8px;transform:translateX(0px) }
+  55% {width: 3px;transform:translateX(5px) }
+  60% {width: 3px;transform:translateX(5px)  }
+  65% {width: 9px;transform:translateX(-1px)  }
+  70% {width: 9px;transform:translateX(-1px)  }
+  75% {width: 8px;transform:translateX(0px)  }
+}
+@keyframes moveBackHair {
+  50% {transform: translateX(0px) }
+  55% {transform: translateX(2px) }
+  60% {transform: translateX(2px) }
+  65% {transform: translateX(-2px) }
+  70% {transform: translateX(-2px) }
+  75% {transform: translateX(0px) }
+}
+@keyframes moveFrontHair {
+  50% {transform: translate(0px) }
+  55% {transform: translate(-4px,4px) }
+  60% {transform: translate(-4px,4px) }
+  65% {transform: translate(4px,4px) }
+  70% {transform: translate(4px,4px) }
+  75% {transform: translate(0px) }
+}
+/********************************
+ ************* HEAR *************
+ ********************************/
+@keyframes moveHearOutRight {
+  50% {transform: translateX(0px)}
+  55% {transform: translateX(1px)}
+  60% {transform: translateX(1px)}
+  65% {transform: translateX(-3px)}
+  70% {transform: translateX(-3px)}
+  75% {transform: translateX(0px)}
+}
+@keyframes moveHearOutLeft {
+  50% {transform: translateX(1px)}
+  55% {transform: translateX(4px)}
+  60% {transform: translateX(4px)}
+  65% {transform: translateX(0px)}
+  70% {transform: translateX(0px)}
+  75% {transform: translateX(1px)}
+}
+@keyframes moveHearInRight {
+  50% {transform: translateX(0px)}
+  55% {transform: translateX(1px)}
+  60% {transform: translateX(1px)}
+  65% {transform: translateX(-3px)}
+  70% {transform: translateX(-3px)}
+  75% {transform: translateX(0px)}
+}
+@keyframes moveHearInLeft {
+  50% {transform: translateX(1px)}
+  55% {transform: translateX(4px)}
+  60% {transform: translateX(4px)}
+  65% {transform: translateX(0px)}
+  70% {transform: translateX(0px)}
+  75% {transform: translateX(1px)}
+}
+/********************************
+ ************* HAND *************
+ ********************************/
+@keyframes handClick {
+  60% { transform: translateY(-2px) }
+  61% { transform: translateY(-1px) }
+  62% { transform: translateY(-2px) }
+  63% { transform: translateY(-1px) }
+  64% { transform: translateY(-2px) }
+}
+ @keyframes moveHand {
+  52% { transform: translateX(0px) }
+  54% { transform: translateX(2px) }
+  56% {transform: translateX(-2px)}
+  58% { transform: translateX(0px) }
+} 
+
+/********************************
+ ************* REST *************
+ ********************************/
+
+@keyframes vapeur {
+  0% { opacity: 1;transform: translateY(0px) }
+  100% { opacity: 0;transform: translateY(-15px) }
+}
+@keyframes planeMove {
+  100% { transform: translate(-550px, -120px) }
+}
+@keyframes lightComputer {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}

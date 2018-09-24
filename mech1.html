@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>MECH DEPT</title>
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>placement management system</title>
+        <meta name="description" content="The personal website for placement management system">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+        <!-- STYLESHEETS  -->
+        <link rel="stylesheet" href="./css/extraSheets/normalize.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="pro.css">  
+
+        <!-- FONTS  -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,800,900" rel="stylesheet" type="text/css">
+
+        <!-- SCRIPTS  -->
+        <script src="./js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="./js/vendor/jquery-1.11.2.min.js"></script>
+        
+    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+ 
+	
+ 
+   <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    
+     <div id="sidebar">
+            <div class="toggle-btn" onclick="togglesidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="temp7.html">REGISTER</a></li>
+                <li><a href="FILTER">FILTER</a></li>
+               <li><a href="LOGOUT">LOGOUT</a></li>
+            </ul>  
+        </div>
+               <script>
+           function togglesidebar()
+{
+    document.getElementById("sidebar").classList.toggle('active');
+}
+        </script>
+ 
+<!--  
+********************   MAIN BODY   ***********************
+**********************************************************
+==========================================================
+==========================================================-->
+             
+           
+ <div class="main-body-wrapper maxWidth"  id="top">
+
+<!--  
+********************   NAV BARS   ***********************
+*********************************************************-->
+
+<nav id="navbarOn" class="navbar-main">
+        <ul>
+            <li><a href="#aboutHere">about</a></li>
+            <li><a href="#codeHere">code</a></li>
+            <li><a href="#callToAction" >email</a></li>
+        </ul>
+</nav> 
+
+<nav id="burgerOn" class="burger">
+  <a href="#" class="burger__button" id="burger-button">
+    <span class="burger__button__icon"></span>
+  </a>
+  <ul class="burger__menu" id="about_code_cta">
+    <li><a onclick="close_menu()" href="#aboutHere">about</a></li>
+    <li><a onclick="close_menu()" href="#codeHere">code</a></li>
+    <li><a onclick="close_menu()" href="#callToAction">email</a></li>
+  </ul>
+</nav>
+ 
+  
+<!--  
+********************   SHADE and LAPTOP PIC  *****************
+*********************************************************--> 
+  
+<div class="lappyTitleWrapper" id="lapTitWrap">
+       
+        <canvas id="canvasShade1" class="shade1"></canvas>
+        
+        <div class="lapy" id="lapytwister">
+             <!-- <img src="https://rawgit.com/appijumbo/landingPage/gh-pages/img/laptop.svg" alt="laptop"> -->
+        </div>    
+       
+<!--  
+********************   TITLE COLUMN   *****************
+*********************************************************--> 
+
+<header class="titleCol">
+                   
+    <div class="col">
+        <h1 class="title">WELCOME </h1>
+        <h1 class="title">MECHANICAL</h1>
+        <h1 class="title">FACULTY</h1>
+		<br>
+                  <h2>WORK IS WORSHIP</h2>
+    </div>
+
+</header> <!-- End of titleCol  --> 
+        
+        
+<!-- **************   SHORTCUT CODE LINK   **************
+********************************************************* -->
+             
+    <a class="codeLink" href="#codeHere"></a>
+            
+</div> <!-- End of LappyTitleWrapper -->
+   
+<!-- **************   ABOUT & SOCIAL MEDIA COLUMN   **************
+********************************************************* --> 
+<article class="aboutWrapper" id="aboutHere">
+
+    <section class="aboutCol">
+        <div class="ab-col"><span class="about-title">About</span><br><span>ENVISIONING A WORLD LEAD BY ENGINEERS,HOLDING A BEACON OF HOPE AND CONFIDENCE FOR GENERATIONS TO COME,TO PRODUCE COMPETENT,DISCIPLINED,QUALITY ENGINEERS & ADMINISTRATORS THROUGH SERVICE PAR EXCELLENCE.<br>Thanks for supporting by!</span></div>        
+    </section> <!-- End ofanoutCol -->
+   
+    <section class="socialBox">
+        <div id="twitter_logo" class="logo"><a href="https://twitter.com/tom_ormiston"><p>Twitter</p></a></div>
+        <div id="code_logo" class="logo"><a href="https://codepen.io/tom_o/"><p>Code Pen</p></a></div>
+        <div id="fcc_logo" class="logo"><a href="https://www.freecodecamp.com/tomdom"><p>FCC</p></a></div>
+        <div id="github_logo" class="logo"><a href="https://github.com/appijumbo"><p>GitHub</p></a></div>
+    </section> <!-- End of socialBox -->
+    
+</article> <!-- End aboutWrapper  -->   
+     
+
+<canvas id="canvasShade2" class="shade2"></canvas>
+<!--  ==============   CODE WRAPPER   ================= -->
+
+<div id="codeHere" class="codeWrapper">
+  
+  
+   
+    <!--  ********************   CODE TAGLINE   **************** -->      
+    
+    <section class="codeTagBox ">  
+        <div class="tagBox tagTitle">
+            <span class="bracket">&lt;</span>
+            <span>CODE</span>
+            <span class="bracket">&gt;</span>
+        </div>
+               
+        <div class="tagBox tagText">
+            “....the industry has a long history of successful developers with varying backgrounds, people tend to care more about what you've actually built than how you got there..”<br>
+        </div>
+    </section> <!-- End of codeTagBox -->        
+
+ <!--  ********************   CODE EXAMPLE BUTTONS   *****************-->   
+    
+    <section class="codeExamplesBox">
+    
+        <a id="appLink1" class="appSize" href="https://appijumbo.github.io/CSC/" alt="toastmaster club site built in Jekyll" target="_blank"></a>
+        <a id="appLink2" class="appSize" href="https://codepen.io/tom_o/pen/XdXqOB" alt="promodo app" target="_blank"></a>
+        <a id="appLink3" class="appSize" href="https://codepen.io/tom_o/pen/dGjyqW" alt="random quote machine app" target="_blank"></a>
+        <a id="appLink4" class="appSize" href="https://codepen.io/tom_o/pen/LGoYyW" alt="calculator app" target="_blank"></a>
+        <a id="appLink5" class="appSize" href="https://appijumbo.github.io/kh-tribute-page/" alt="Keir Hardi tribute page" target="_blank"></a>
+        <a id="appLink6" class="appSize" href="https://codepen.io/tom_o/pen/YyvQJw" alt="weather app" target="_blank"></a>
+    
+    </section>   <!-- End of codeExamplesBox -->   
+   
+               
+</div> <!-- End of Code wrapper  -->        
+                  
+      
+<!-- ***************** CTA *************** -->   
+
+<section id="callToAction" class="cta">
+    <h3>
+    <span>like what you see?..</span>
+    <span>great then email me!</span>
+    </h3>
+    <br>
+    <p>harishvairamr@gmail.com</p>
+</section>  <!-- End of CTA -->                
+                                  
+                                                   
+                                                                                     
+<!-- ******** LAPTOP HANDS EMAIL WAS HERE ********* -->  
+
+
+
+<!-- ******** FOOTER ********* -->   
+
+<footer class="footer">
+        <div class="footerLink">
+            <a href="#top" class="chevron">&#x2227;</a>
+        </div>                 
+        <div class="footerBottom">
+            <h4 class="item">&copy; WOTRID SOLUTIONS 2018</h4>
+        </div>               
+</footer>                     
+   
+   
+</div>   <!--  End of Main Body Wrapper  -->                   
+    
+ 
+ 
+ <!--  
+********************   END OF MAIN BODY   ****************
+**********************************************************
+==========================================================
+==========================================================-->
+   
+
+
+<script>window.jQuery || document.write('<script src="./js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="./js/main.js"></script>
+    
+</body>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Varela);
+
+html {
+    height: 100%;
+}
+body {
+    background:url('http://wallpapercave.com/wp/GUAaScC.jpg') #f2f2f2;
+    font-family: 'Varela', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    min-height: 100%;
+    position: relative;
+}
+label{
+    margin-top: 6px;
+    line-height: 17px;
+}
+hr{
+    border-top: 1px solid #BAC8D6;
+}
+a {
+    color: #05A09A;
+}
+a:focus, a:hover {
+    color: #ccc;
+}
+.checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline{
+    margin-top: 6px;
+}
+.logo .fa {
+    font-size: 50px;
+}
+.top-bar h1{
+    font-size: 25px;
+    color: #ffffff;
+    text-shadow: 0px 0px 12px #aaa;
+}
+.wrapper{
+    padding: 10px;
+    padding-bottom: 100px;
+}
+.logo img{
+    width:100%;
+}
+
+/******* Login Page *******/
+
+.relative{
+    position: relative;
+}
+.login-container-wrapper .logo,
+.login-container-wrapper .welcome{
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 5px #000;
+}
+.login-container-wrapper .logo{
+    text-align: center;
+    position: absolute;
+    top: -38px;
+    margin: 0 auto;
+    width: 90px;
+    left: 50%;
+    margin-left:-45px;
+    border-radius:50%;
+    background-color: #1d5256;
+    padding: 20px;
+    box-shadow: 0px 3px 2px 0px #000;
+}
+.login-container-wrapper{
+    max-width: 400px;
+    margin: 15% auto;
+    padding: 40px;
+  border-radius:50px 0;
+    box-sizing: border-box;
+    background: rgb(29, 82, 86);
+    box-shadow: 1px 1px 4px 0px #000000, 8px 8px 0px 0px #a2703f, 9px 9px 4px 0px #000000, 16px 16px 0px 0px rgb(172, 65, 31), 17px 17px 7px 1px #000000;
+    position: relative;
+    padding-top: 80px;
+}
+
+.login-form .form-group{
+    margin-right: 0;
+    margin-left: 0;
+}
+.login input:focus + .fa{
+  color:#1d5256;
+}
+.login-form i{
+    position: absolute;
+    top:18px;
+    right: 20px;
+    color: #a2703f;
+}
+.login-form .input-lg{
+    font-size: 16px;
+    height: 52px;
+    padding: 10px 25px;
+    border-radius: 0;
+}
+.login input[type="text"],
+.login input[type="password"],
+.login input:focus{
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #a2703f;
+    color: #eee;
+    border-left: 4px solid rgba(150, 103, 58, 0.99);
+}
+.login input:focus{
+    border-left: 4px solid #ccd8da;
+}
+input:focus i{
+    color: #fff !important;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: rgba(40,52,67,0.75)!important;
+    background-image: none;
+    color: rgb(0, 0, 0);
+    border-color: #FAFFBD;
+}
+.login .checkbox label,
+.login .checkbox a{
+    color: #ddd;
+}
+.btn-success{
+    background-color: transparent;
+    background-image: none;
+    padding: 8px 50px;
+    border-radius: 0;
+    border: 2px solid #93a5ab;
+    box-shadow: inset 0 0 0 0 #7692A7;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+}
+.btn-success:focus, .btn-success:hover, .btn-success.active, .btn-success:active,.btn-success.active.focus, .btn-success.active:focus, .btn-success.active:hover, .btn-success:active.focus, .btn-success:active:focus, .btn-success:active:hover, .open>.dropdown-toggle.btn-success.focus, .open>.dropdown-toggle.btn-success:focus, .open>.dropdown-toggle.btn-success:hover{
+        background-color: transparent;
+        border-color: #fff;
+        box-shadow: inset 0 0 100px 0 #7692A7;
+        color: #FFF;
+}

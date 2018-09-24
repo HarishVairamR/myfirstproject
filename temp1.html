@@ -1,0 +1,119 @@
+<html>
+ <head>
+  <title>register</title>
+
+<style>
+   .margin 
+   {
+   margin:50px;
+   }
+   .form-container
+   {
+	max-width:1000px; /* change this to get your desired form width */
+        width:100%;
+	margin: 0 auto;
+	border:solid 1px #CCCCCC; /* Remove outer border if wished */
+	padding:10px;
+	margin-top:5px;
+	margin-bottom:40px;
+	padding-bottom:30px;
+   }
+  .header 
+  {
+  font-size:30px;
+  font-weight:normal;
+  background-color:#000080; /* Header Backgroung Colour  */
+  color:white; /* Header Text Colour  */
+  max-width:100%;
+  padding:10px;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child {
+    background-color: #dddddd;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    
+}
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+.button3 {
+    background-color: white;
+    color: black;
+    border: 2px solid #f44336;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+  </style>
+  </head>
+    <body>
+	<div class="margin">
+	<div class="form-container">
+	<div class="header">STUDENTS REGISTER FORM</div>
+    <div>&nbsp;</div>
+	 <form action="newreg.php"  method="POST">
+  <h2>FULL-Name</h2>*<input type="text" name="name" placeholder="FULL-NAME"  required>
+  <br>
+  <br>
+  <h2>ROLL-NUMBER</h2>*<br>
+  <input type="text" name="rollno" placeholder="rollno" required>
+  <br>
+  <br>
+  <h2>DEPARTEMENT</h2>*<input type="text" name="dept" placeholder="DEPARTEMENT"  required>
+  <br>
+  <br>
+  <h2>MARKS</h2>*
+  
+   <h2>SSLC</h2>*<input type="text" name="sslc" placeholder="sslc mark"  required>
+   <h2>HSC</h2>*<input type="text" name="hsc" placeholder="Hsc mark"  required>
+   <h2>DIP</h2>*<input type="text" name="dip" placeholder="dipmark"  required>
+   <h2>UG</h2>*<input type="text" name="ug" placeholder="Ug mark"  required>
+   <h2>PG</h2>*<input type="text" name="pg" placeholder="Pg mark"  required>
+   <h2>CURRENT-ARREARS</h2>*<input type="text" name="arrear" placeholder="Current Arrear"  required>
+   <h2>HISTORY OF ARREARS</h2>*<input type="text" name="paper" placeholder="History of Arrear"  required>
+  
+   <h2>E-MAIL ID</h2>*
+  <input type="mailid" name="mailid" placeholder="enter your email-id"  required></textarea>  
+  
+  <h2>CONTACT NO</h2>*<input type="text"  name="cellno" placeholder="contact" required>
+  <br>
+  <button class="button button1" name="submit" style="margin-left:auto;margin-right:auto;display:block;margin-top:2%;margin-bottom:0%">SUBMIT</button><br>
+  <!-- <button class="button button3" style="margin-left:auto;margin-right:auto;display:block;margin-top:5%;margin-bottom:0%">CANCEL</button> -->
+  </form>
+  </div>
+  </div>
+	  </body>
+	  </html>
